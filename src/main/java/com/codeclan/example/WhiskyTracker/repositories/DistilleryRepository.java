@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface DistilleryRepository extends JpaRepository<Distillery, Long> {
     List<Distillery> getByRegion(String regionGiven);
-    List<Distillery> getByWhiskiesAgeGreaterThanEqual (Integer givenAge);
+    List<Distillery> getByWhiskiesAge (Integer givenAge);
 }
